@@ -1,0 +1,11 @@
+.timeline p{
+    font-size: 3rem;
+    color: rgb(231, 50, 50); 
+    text-shadow:0 0 10px rgb(148, 0, 0) ;
+}
+
+.timeline i{
+    position: absolute;
+    top: 556px;
+    left: 620px;
+}

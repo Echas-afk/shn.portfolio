@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(75, 69, 69), rgb(216, 42, 42));
+}
+
+nav{
+    width: 99.7;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.logo span{
+    color:rgb(231, 50, 50);
+    text-shadow:0 0 10px rgb(148, 0, 0);
+} 
+.oishi, .watakshi{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 2rem;
+    display: none;
+}
+
+.nav-container .links{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:rgb(255, 0, 0) ;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
+.Question .qp{
+    margin-top: 2.5rem;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 3rem;
+    text-shadow: 0 0 10px black;
+}
+
+.Question .service{
+    text-align: center;
+    font-size: 1.7rem;
+    text-shadow: 0 0 10px black;
+}
+
+.icon1 i{
+    position: absolute;
+    top: 27rem;
+    left: 27rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    color: rgb(226, 58, 58);
+    margin: 10px 5px;
+    font-size: 2.5rem;
+}
+
+.icon1 p{
+    position: absolute;
+    top: 30rem;
+    left: 23rem;
+    width: 12rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 2rem;
+}
+
+.icon1 span{
+    position: absolute;
+    top: 33rem;
+    left: 21.8rem;
+    width: 18rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 1.5rem;
+}
+
+.icon2 i{
+    position: absolute;
+    top: 27rem;
+    left: 48rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    color: rgb(226, 58, 58);
+    margin: 10px 5px;
+    font-size: 2.5rem;
+}
+
+.icon2 p{
+    position: absolute;
+    top: 30rem;
+    left: 45rem;
+    width: 9rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 2rem;
+}
+
+.icon2 span{
+    position: absolute;
+    top: 33rem;
+    left: 39.3rem;
+    width: 1rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 1.3rem;
+}
+
+.icon3 i{
+    position: absolute;
+    top: 27rem;
+    left: 70.5rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    margin: 10px 5px;
+    font-size: 2.5rem;
+}
+
+.icon3 p{
+    position: absolute;
+    top: 30rem;
+    left: 67.6rem;
+    width: 9rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 2rem;
+}
+
+.icon3 span{
+    position: absolute;
+    top: 33rem;
+    left: 63.7rem;
+    width: 18rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 1.3rem;
+}
+
+.icon4 i{
+    position: absolute;
+    top: 27rem;
+    left: 91rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    margin: 10px 5px;
+    font-size: 2.5rem;
+}
+
+.icon4 p{
+    position: absolute;
+    top: 30rem;
+    left: 87rem;
+    width: 15rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 2rem;
+}
+
+.icon4 span{
+    position: absolute;
+    top: 33rem;
+    left: 84rem;
+    width: 18rem;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    text-shadow: 0 0 10px;
+    margin: 10px 5px;
+    font-size: 1.2rem;
+}
+
+.email-moko p{
+    position: absolute;
+    left: 52rem;
+    top: 40rem;
+    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+.email-moko span{
+    position: absolute;
+    top:44rem ;
+    left: 55rem;
+    font-size: 1.5rem;
+}
+
+.form .w1{
+    position: absolute;
+    top: 50rem;
+    left: 22rem;
+    width: 38rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border-color: transparent;
+}
+
+.form .w2{
+    position: absolute;
+    top: 60rem;
+    left: 22rem;
+    width: 80rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border-color: transparent;
+}
+
+.form .w3{
+    position: absolute;
+    top: 55rem;
+    left: 22rem;
+    width: 80rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border-color: transparent;
+}
+
+.form .w4{
+    position: absolute;
+    top: 50rem;
+    left: 62rem;
+    width: 40rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border-color:transparent;
+}
+
+.contact-btn button{
+    position: absolute;
+    top: 66rem;
+    left: 22rem;
+    border-radius: 1rem;
+    width: 11rem;
+    height: 3rem;
+    border-color: transparent;
+    font-size: 1rem;
+    
+}

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(75, 69, 69), rgb(216, 42, 42));
+}
+
+nav{
+    width: 99.7;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.logo span{
+    color:rgb(231, 50, 50);
+    text-shadow:0 0 10px rgb(148, 0, 0);
+} 
+.oishi, .watakshi{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 2rem;
+    display: none;
+}
+
+.nav-container .links{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:rgb(255, 0, 0) ;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
+.nav-container .Kontakin-moko{
+    background-color:transparent ;
+    padding: 5px 25px;
+    border-radius: 20px;
+    border: 3.5px solid rgb(94, 5, 5);
+}
+
+.nav-container .Kontakin-moko a{
+    color: white;
+}
+
+.nav-container .Kontakin-moko:hover{
+    background-color: rgb(94, 5, 5);
+}
+
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: brightness(40%) blur(3px);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+ .dropdown .links a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+ }
+
+.dropdown .links a:hover{
+    background-color: rgb(94, 5, 5);
+ }
+
+ section{
+    width: 100%;
+    height: 80vh;
+ }
+
+ .main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .main-container .image{
+    z-index: -1;
+    width: 400px;
+ }
+
+ .main-container .image img{
+    width: 100%;
+ }
+
+ .main-container .content{
+    color: black;
+    /* width: 40%; */
+    min-height: 100px;
+ }
+
+ .content h1{
+    font-size: clamp(1rem, 2rem + 5vw, 3rem);
+ }
+
+ .content h1 span{
+    color:rgb(226, 58, 58) ;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+ }
+
+ .content .typewriter{
+    font-weight: 600;
+    font-size: clamp(1rem, 1rem + 5vw, 2rem);
+ }
+ 
+.content .typewriter span{
+    color: rgb(226, 58, 58);
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+ }
+ .content p{
+    margin: 10px 0;
+    font-size: clamp(1.10rem, 0.2rem + 9vw, 1rem);
+    text-shadow: 0 0 15px;
+ }
+
+ .social-links i{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: solid black;
+    border-radius: 50%;
+    color: black;
+    margin: 10px 5px;
+    font-size: 1.5rem;
+ }

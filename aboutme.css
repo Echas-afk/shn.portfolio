@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 140vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(75, 69, 69), rgb(216, 42, 42));
+}
+
+nav{
+    width: 205.4%;
+    height: 10vh;
+    position: sticky;
+}
+
+.Konteyner-ko{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Konteyner-ko{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Konteyner-ko .links{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.Konteyner-ko .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+}
+
+.Konteyner-ko .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:rgb(255, 0, 0) ;
+    transition: 0.2s linear;
+}
+
+.Konteyner-ko .links a:hover::before{
+    width: 100%;
+}
+
+.Konteyner-ko .Kontakin-moko{
+    background-color:transparent ;
+    padding: 5px 25px;
+    border-radius: 20px;
+    border: 3.5px solid rgb(94, 5, 5);
+}
+
+.Konteyner-ko .Kontakin-moko a{
+    color: white;
+}
+
+.Konteyner-ko .Kontakin-moko:hover{
+    background-color: rgb(94, 5, 5);
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.logo span{
+    color:rgb(231, 50, 50);
+    text-shadow:0 0 10px rgb(148, 0, 0);
+}
+
+.about-ako p{
+    width: 130%;
+    position: absolute;
+    top: 170px;
+    left: 140px;
+    margin-left: 10px;
+    font-size: clamp(1.60rem, 2.9rem + 9vw, 1.50rem);
+    text-shadow: 0 0 15px;
+    line-height: 2;   
+}
+
+.about-ako span{
+    color:rgb(231, 50, 50);
+    text-shadow:0 0 10px rgb(148, 0, 0);
+    font-size: 2rem;
+}
+
+.wala-akong-alam .Title{
+    width: 130%;
+    position: absolute;
+    top: 475px;
+    left: 140px;
+    margin-left: 10px;
+    font-size: 3rem;
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+    color: rgb(231, 50, 50); 
+    text-shadow:0 0 10px rgb(148, 0, 0) ;
+}
+
+.wala-akong-alam .Title2{
+    width: 130%;
+    position: absolute;
+    top: 475px;
+    left: 75rem;
+    margin-left: 10px;
+    font-size: clamp(1.95rem, 2.9rem + 9vw, 1.50rem);
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+    
+}
+
+.wala-akong-alam .impormasyon1{
+    width: 130%;
+    position: absolute;
+    top: 565px;
+    left: 140px;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+}
+
+.wala-akong-alam .impormasyon2{
+    width: 130%;
+    position: absolute;
+    top: 620px;
+    left: 140px;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 15px;
+    line-height: 1.5; 
+}
+
+.wala-akong-alam .impormasyon3{
+    width: 130%;
+    position: absolute;
+    top: 675px;
+    left: 140px;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 15px;
+    line-height: 1.5; 
+}
+
+.wala-akong-alam .impormasyon4{
+    width: 130%;
+    position: absolute;
+    top: 556px;
+    left: 620px;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+
+
+}
+
+.wala-akong-alam .impormasyon5{
+    width: 130%;
+    position: absolute;
+    top: 730px;
+    left: 140px;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 15px;
+    line-height: 2; 
+}
+
+.wala-akong-alam .impormasyon6{
+    width: 130%;
+    position: absolute;
+    top: 672px;
+    left: 620px;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 15px;
+    line-height: 1.8; 
+}
+
+.wala-akong-alam .impormasyon7{
+    width: 130%;
+    position: absolute;
+    top: 735px;
+    left: 620px;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-shadow: 0 0 15px;
+    line-height: 1.8; 
+}
+
+
+.kakayahan .kakayahan1{
+    width: 130%;
+    position: absolute;
+    top: 535px;
+    left: 75rem;
+    margin-left: 10px;
+    font-size: clamp(1.55rem, 2.9rem + 9vw, 1.50rem);
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+}
+
+.kakayahan .kakayahan2{
+    width: 130%;
+    position: absolute;
+    top: 535px;
+    left: 85rem;
+    margin-left: 10px;
+    font-size: clamp(1.55rem, 2.9rem + 9vw, 1.50rem);
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+}
+
+.kakayahan .kakayahan3{
+    width: 130%;
+    position: absolute;
+    top: 535px;
+    left: 95rem;
+    margin-left: 10px;
+    font-size: clamp(1.55rem, 2.9rem + 9vw, 1.50rem);
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+}
+
+.kakayahan .kakayahan4{
+    width: 130%;
+    position: absolute;
+    top: 535px;
+    left: 105rem;
+    margin-left: 10px;
+    font-size: clamp(1.55rem, 2.9rem + 9vw, 1.50rem);
+    text-shadow: 0 0 15px;
+    line-height: 1.5;
+}
+
+.kakayahan .progreso1{
+    position: absolute;
+    left: 15px;
+    background-color: black;
+    height: 6.5rem;
+    max-width: 0.2%;
+    border-radius: 4px;
+}
+
+.kakayahan .progreso2{
+    position: absolute;
+    left: 15px;
+    background-color: black;
+    height: 5rem;
+    max-width: 0.2%;
+    border-radius: 4px;
+}
+
+.kakayahan .progreso3{
+    position: absolute;
+    left: 15px;
+    background-color: black;
+    height: 2.5rem;
+    max-width: 0.2%;
+    border-radius: 4px;
+}
+
+.kakayahan .progreso4{
+    position: absolute;
+    left: 15px;
+    background-color: black;
+    height: 9rem;
+    max-width: 0.2%;
+    border-radius: 4px;
+}
+
+.timeline p{
+    position: absolute;
+    top: 60rem;
+    left: 140px;
+    font-size: 2rem;
+}
+
+.bar-hehe .bar1{
+    position: absolute;
+    left: 76.59rem;
+    top: 44rem;
+    background-color: grey;
+    height: 4rem;
+    max-width: 0.5%;
+}
+
+.bar-hehe .bar1-1{
+    position: absolute;
+    left: 76.59rem;
+    top: 47.5rem;
+    background-color: grey;
+    height: 1rem;
+    max-width: 0.5%;
+    border-radius: 2rem;
+}
+
+.bar-hehe .bar2{
+    position: absolute;
+    left: 86.59rem;
+    top: 42rem;
+    background-color: grey;
+    height: 4rem;
+    max-width: 0.5%;
+}
+
+.bar-hehe .bar1-2{
+    position: absolute;
+    left: 86.59rem;
+    top: 44.5rem;
+    background-color: grey;
+    height: 4rem;
+    max-width: 0.5%;
+    border-radius: 2rem;
+}
+
+.bar-hehe .bar3{
+    position: absolute;
+    left: 96.57rem;
+    top: 40rem;
+    background-color: grey;
+    height: 7rem;
+    max-width: 0.5%;
+}
+
+.bar-hehe .bar1-3{
+    position: absolute;
+    left: 96.57rem;
+    top: 40rem;
+    background-color: grey;
+    height: 8.5rem;
+    max-width: 0.5%;
+    border-radius: 2rem;
+}
+
+.bar-hehe .bar4{
+    position: absolute;
+    left: 106.57rem;
+    top: 45rem;
+    background-color: grey;
+    height: 2.5rem;
+    max-width: 0.5%;
+}
+
+.bar-hehe .bar1-4{
+    position: absolute;
+    left: 106.57rem;
+    top: 45rem;
+    background-color: grey;
+    height: 3.5rem;
+    max-width: 0.5%;
+    border-radius: 2rem;
+}

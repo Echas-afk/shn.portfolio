@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    background: linear-gradient(to right,rgb(75, 69, 69), rgb(216, 42, 42));
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.Konteyner-ko{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Konteyner-ko{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Konteyner-ko .links{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.Konteyner-ko .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+}
+
+.Konteyner-ko .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:rgb(255, 0, 0) ;
+    transition: 0.2s linear;
+}
+
+.Konteyner-ko .links a:hover::before{
+    width: 100%;
+}
+
+.Konteyner-ko .Kontakin-moko{
+    background-color:transparent ;
+    padding: 5px 25px;
+    border-radius: 20px;
+    border: 3.5px solid rgb(94, 5, 5);
+}
+
+.Konteyner-ko .Kontakin-moko a{
+    color: white;
+}
+
+.Konteyner-ko .Kontakin-moko:hover{
+    background-color: rgb(94, 5, 5);
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.logo span{
+    color:rgb(231, 50, 50);
+    text-shadow:0 0 10px rgb(148, 0, 0);
+}
+
+.p1 p{
+    font-size: 2rem;
+    position: absolute;
+    top: 20rem ;
+    left: 20rem;
+    text-shadow: 0 0 10px;
+}
+
+.img img{
+    position: absolute;
+    top: 25rem;
+    left: 20rem;
+    width: 35.5rem;
+    height: 25rem;
+}
+
+.img2 img{
+    position: absolute;
+    top: 25rem;
+    left: 70rem;
+    width: 35.5rem;
+    height: 25rem;
+}
+.img3 img{
+    position: absolute;
+    top: 55rem;
+    left: 20rem;
+    width: 35.5rem;
+    height: 25rem;
+}
+.img4 img{
+    position: absolute;
+    top: 55rem;
+    left: 70rem;
+    width: 35.5rem;
+    height: 25rem;
+}
+.img5 img{
+    position: absolute;
+    top: 85rem;
+    left: 20rem;
+    width: 35.5rem;
+    height: 25rem;
+}
+
+.p p{
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+    text-shadow: 0 0 10px;
+    
+}
+
+.p3 p{
+    font-size: 2rem;
+    position: absolute;
+    top: 120rem ;
+    left: 20rem;
+    text-shadow: 0 0 10px;
+}
+
+.img6 img{
+    position: absolute;
+    top: 125rem;
+    left: 20rem;
+    width: 35.5rem;
+    height: 25rem;
+}
+
