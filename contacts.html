@@ -6,8 +6,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="contacts.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #time-date {
+            text-align: center;
+        }
+        .time, .date {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
+    <script>
+        function updateTimeAndDate() {
+            const now = new Date();
+            const time = now.toLocaleTimeString();
+            const date = now.toLocaleDateString();
+
+            document.getElementById('time').textContent = time;
+            document.getElementById('date').textContent = date;
+        }
+
+        setInterval(updateTimeAndDate, 1000);
+        updateTimeAndDate(); // Initial call to display time and date immediately
+    </script>
    <nav>
     <div class="nav-container">
     <div class="logo">
@@ -59,9 +89,6 @@
     <div class="contact-btn">
         <button>Send your Message!</button>
 
-        <div id="clock"></div>
-
-        <script src="time.js"></script>
     </div>
 </body>
 </html>
